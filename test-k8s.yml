@@ -1,0 +1,7 @@
+---
+- name: Test Kubernetes Core Collection
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Gather cluster info
+      kubernetes.core.k8s_cluster_info:
